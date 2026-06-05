@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Herni & Yazid</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cover Page -->
+    <div id="cover-page">
+        <div class="cover-content">
+            <p class="cover-title">The Wedding Of</p>
+            <h1 class="cover-names">Abi Yazid<br><span>&amp;</span><br>Siti Herni</h1>
+            <p class="cover-date">28 JUNI 2026</p>
+            <p class="cover-guest">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+            <button class="btn-open" onclick="openInvitation()">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px; margin-bottom: 2px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                BUKA UNDANGAN
+            </button>
+        </div>
+    </div>
+
+    <!-- Envelope Header -->
+    <div class="envelope-header">
+        <div class="wax-seal">H&Y</div>
+    </div>
+
+    <!-- Main Content wrapper to look like it's coming out of the envelope -->
+    <main class="paper-content">
+        
+        <!-- Intro & Names -->
+        <section class="section-intro zoom-in">
+            <div class="card green-card">
+                <p class="small-caps">Please join us for the wedding of</p>
+                <h1 class="names">Kabi Yazid Al Bustomi<br><span class="ampersand">&</span><br>Siti Herni Septiah</h1>
+            </div>
+            
+            <div class="card date-card">
+                <div class="date-inner">
+                    <span class="date-day">28</span>
+                    <span class="date-month">Juni</span>
+                    <span class="date-year">2026</span>
+                    <p class="small-text">Kp. Panembong Kaler, Cianjur</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Polaroid Photo -->
+        <section class="section-photo slide-left">
+            <div class="polaroid">
+                <!-- Foto Anda akan muncul di sini (bisa ganti 'photo.jpg' dengan nama file asli Anda) -->
+                <img src="assets/pernikahan.jpeg" alt="Herni & Yazid" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800'">
+                <div class="polaroid-caption">Our Love Story</div>
+            </div>
+        </section>
+
+        <!-- Pasangan & Keluarga -->
+        <section class="section-family zoom-in">
+            <h2 class="section-title">Mempelai</h2>
+            <div class="family-grid">
+                <div class="family-member slide-left">
+                    <h3 class="arabic-name" dir="rtl">ابی یزید</h3>
+                    <h3 class="latin-name">KABI YAZID AL BUSTOMI</h3>
+                    <p>Putra Dari Bapak Abdul Ghaust<br>& Ibu Sopioh</p>
+                </div>
+                
+                <div class="arabic-and zoom-in" dir="rtl">و</div>
+
+                <div class="family-member slide-right">
+                    <h3 class="arabic-name" dir="rtl">ستی ھرنی</h3>
+                    <h3 class="latin-name">SITI HERNI SAPTIAH</h3>
+                    <p>Putri dari Bapak Heru Chaerudin<br>& Ibu Siti Saidah</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Story -->
+        <section class="section-lovestory fade-in">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-text">
+                <p>Kami tidak memulai cerita yang indah. Bahkan di awal, kami hanyalah dua orang asing yang berjalan di arah masing-masing, tanpa pernah menyangka akan dipertemukan dalam satu takdir yang sama.</p>
+                <p>Waktu mempertemukan kami dalam keadaan yang tidak sempurna. Ada luka yang belum sepenuhnya sembuh, ada cerita lama yang masih tersisa. Namun di situlah kami belajar bahwa Allah tidak mempertemukan tanpa alasan.</p>
+                <p>Kami pernah saling jauh — bukan karena hilang rasa, tapi karena ingin memperbaiki diri, menata hati, dan memastikan bahwa apa yang kami jalani bukan sekadar keinginan, melainkan kesiapan.</p>
+                <p>Dalam jarak itu, kami belajar arti rindu yang tidak harus diungkapkan, dan do'a yang diam-diam dipanjatkan. Hingga pada akhirnya, Allah kembali mendekatkan kami dengan cara yang lebih tenang, lebih dewasa, dan lebih pasti.</p>
+                <p>Kami pun memahami bahwa cinta yang baik bukan yang tergesa-gesa, melainkan yang dipersiapkan dengan kesungguhan. Bukan hanya tentang bersama, tapi tentang bagaimana saling membawa menuju kebaikan dan ridho-Nya.</p>
+                <p>Hari ini, kami memilih untuk melangkah dengan niat yang lebih serius — mengikat bukan hanya perasaan, tetapi juga tanggung jawab dalam sebuah janji suci pernikahan. Semoga langkah ini menjadi langkah ibadah panjang, yang tidak hanya menyatukan kami di dunia, tetapi juga kelak di Akhirat dalam Ridha Allah SWT.</p>
+            </div>
+        </section>
+
+        <!-- Timeline / Jadwal -->
+        <section class="section-timeline slide-right">
+            <h2 class="section-title">Timeline</h2>
+            
+            <div class="timeline-item">
+                <div class="time">08:00 WIB</div>
+                <div class="event-title">AKAD NIKAH</div>
+                <div class="event-desc">Kp. Panembong Kaler<br>Jln. Ir. Hj. Juanda 02/01, Mekarsari, Cianjur</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="time">09:00 WIB - Selesai</div>
+                <div class="event-title">RESEPSI</div>
+                <div class="event-desc">Kp. Panembong Kaler<br>Jln. Ir. Hj. Juanda 02/01, Mekarsari, Cianjur</div>
+            </div>
+
+            <a href="https://goo.gl/maps/sthtBt94hvwp9yH17?g_st=aw" target="_blank" class="map-link">GET DIRECTIONS</a>
+        </section>
+
+        <!-- Information & Details -->
+        <section class="section-info zoom-in">
+            <h2 class="section-title">Information</h2>
+
+            <div class="info-block">
+                <h3>WEDDING GIFT</h3>
+                <p>Doa restu Anda merupakan karunia terindah bagi kami. Namun jika Anda ingin memberikan tanda kasih, dapat dikirimkan melalui:</p>
+                <p class="dana-info">Dana: <span id="dana-number">083159438821</span><br>a.n. Siti Herni Saptiah / Kabi Yazid Al Bustomi</p>
+                <button class="btn-outline" onclick="copyDana()">COPY NUMBER</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Background Music Audio Tag -->
+    <!-- Removed autoplay attribute so it waits for button click -->
+    <audio id="bg-music" loop>
+        <source src="assets/min_awel_dekika.m4a" type="audio/mp4">
+    </audio>
+
+    <!-- Floating Audio Toggle -->
+    <button class="audio-toggle" id="audio-btn" onclick="toggleAudio()" title="Play/Pause Music">
+        <svg id="audio-icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none; width: 24px; height: 24px;">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <svg id="audio-icon-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block; width: 24px; height: 24px;">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+    </button>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>

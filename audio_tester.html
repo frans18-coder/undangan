@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Waktu Pas Lirik</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; margin: 5px; font-size: 16px; cursor: pointer; }
+        .controls { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Alat Bantu Cari Detik Lirik "Janbak..."</h2>
+    <p>Karena file audio bisa memiliki durasi awalan (intro) yang berbeda-benar, kita bisa tes manual di sini.</p>
+    
+    <audio id="test-audio" src="assets/min_awel_dekika.m4a" controls style="width: 80%; max-width: 500px;"></audio>
+    
+    <div class="controls">
+        <button onclick="tesWaktu(181.5)">Tes 181.5</button>
+        <button onclick="tesWaktu(182.0)">Tes 182.0</button>
+        <button onclick="tesWaktu(182.5)">Tes 182.5</button>
+        <button onclick="tesWaktu(183.0)">Tes 183.0</button>
+        <button onclick="tesWaktu(183.5)">Tes 183.5</button>
+        <button onclick="tesWaktu(184.0)">Tes 184.0</button>
+        <button onclick="tesWaktu(185.0)">Tes 185.0</button>
+    </div>
+    
+    <p style="margin-top: 30px;">
+        Jika sudah ketemu yang paling pas (misalnya 183.0), Anda bisa ketik angka tersebut di file <b>script.js</b>, atau beri tahu saya angkanya agar saya ubahkan!
+    </p>
+
+    <script>
+        const audio = document.getElementById('test-audio');
+        function tesWaktu(detik) {
+            audio.currentTime = detik;
+            audio.play();
+        }
+    </script>
+</body>
+</html>
